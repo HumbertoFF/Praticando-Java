@@ -19,14 +19,12 @@ public class GuardandoConsoantes {
             letrasMinusculas = (97 <= numAscii && numAscii <= 122);//INTEVALO DAS LETRAS MINÚSCULAS
             int[] vogais = {65, 69, 73, 79, 85, 97, 101, 105, 111, 117};//CÓDIGO DA TABELA ASCII PARA VOGAIS MAIÚSCULAS OU MINÚSCULAS
             if (letrasMaiusculas || letrasMinusculas) {                        //PERMITE ENTRAR APENAS LETRAS MAIÚSCULAS OU MINÚSCULAS
-                for (int i = 0; i < consoantes.length - 1; i++) {               //REPETE DE ACORDO COM O TAMANHO DO ARRAY DE CONSOANTES
-                    for (int j = 0; j < vogais.length - 1; j++) {               //REPETE DE ACORDO COM O TAMANHO DO ARRAY DE VOGAIS
-                        if (numAscii != vogais[j]) {                            //COMPARA SE DADO DIGITADO É DIFERENTE DE UMA VOGAL
-                            consoante = true;
-                        } else {
-                            consoante = false;
-                            break;
-                        }
+                for (int j = 0; j < vogais.length - 1; j++) {               //REPETE DE ACORDO COM O TAMANHO DO ARRAY DE VOGAIS
+                    if (numAscii != vogais[j]) {                            //COMPARA SE DADO DIGITADO É DIFERENTE DE UMA VOGAL
+                        consoante = true;
+                    } else {
+                        consoante = false;
+                        break;                     //PARA A EXERCUÇÃO DO FOR
                     }
                 }
                 if (consoante) {          //SE FOR UMA CONSOANTE GUARDE O VALOR, CONTE E PULE PARA O PRÓXIMO ÍNDICE
