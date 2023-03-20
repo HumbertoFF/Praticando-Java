@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class GuardandoConsoantes {
     //  COMENTÁRIOS PARA FINS DIDÁTICOS
-    public static void guardarConsoantes(){
+    public static void guardarConsoantes(int tam){
         Scanner letras = new Scanner(System.in); //BIBLIOTECA PARA INPUTS DO TECLADO
-        String[] consoantes = new String[10]; //GUARDAR OS 10 VALORES
+        String[] consoantes = new String[tam]; //GUARDAR OS 10 VALORES
         //DECLARAÇÃO DE VARIÁVEIS
         int quantConsoantes = 0;
         int count = 0;
