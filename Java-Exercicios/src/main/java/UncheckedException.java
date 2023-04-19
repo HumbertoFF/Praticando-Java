@@ -2,19 +2,22 @@ package main.java;
 
 import javax.swing.*;
 
+import static java.lang.Double.parseDouble;
+
 public class UncheckedException {
-    public static void main(String[] args) {
+    public static void main() {
+        JOptionPane.showMessageDialog(null,"Faça uma divisão de dois inteiros!");
         String a = JOptionPane.showInputDialog("Numerador: ");
         String b = JOptionPane.showInputDialog("Denominador: ");
         
         try{
-            int resultado = dividir(Integer.parseInt(a),Integer.parseInt(b));
-            System.out.println("Resultado: "+ resultado);
+            double resultado = dividir(Integer.parseInt(a),Integer.parseInt(b));
+            JOptionPane.showMessageDialog(null,"Resultado: "+ resultado);
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null,"Entrada inválida, informe um número inteiro" + e.getMessage());
+            JOptionPane.showMessageDialog(null,"Entrada inválida, informe um número inteiro");
             //throw new RuntimeException(e);
         } catch (ArithmeticException e) {
-            JOptionPane.showMessageDialog(null,"Não é possível dividir o número por zero " + e.getMessage());
+            JOptionPane.showMessageDialog(null,"Não é possível dividir o número por zero");
             //throw new RuntimeException(e);
         } finally {
             System.out.println("Chegou no finally!");
@@ -23,6 +26,10 @@ public class UncheckedException {
 
     }
 
-    private static int dividir(int a, int b) { return  a/b;
+    private static int dividir(int a, int b) {
+
+        return a/b;
     }
+
+
 }
