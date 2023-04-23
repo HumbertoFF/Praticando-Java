@@ -4,21 +4,18 @@ import javax.swing.*;
 import java.io.*;
 
 public class CheckedException {
-    public static void main(String[] args){
-        //variável com o nome do arquivo para ser passado pelo método 'nomeDoArquivo'.
-        String nomeDoArquivo = "arquivoDeTexto.txt";
+    public static void imprimirArquivoDeTexto(String nomeDoArquivo) {
+        //variável com o nome do arquivo para ser passado por parâmetro
         try {
             imprimirArquivoNoConsole(nomeDoArquivo);
         }catch ( FileNotFoundException e){
             //tratando erro de arquivo não encontrado.
-            JOptionPane.showMessageDialog(null,"Verifique o nome do arquivo");
+            System.out.println("Verifique o nome do arquivo");
         }
         catch (IOException e) {
             //Erro genérico que não dá pra saber o que vai acontecer.
             JOptionPane.showMessageDialog(null,"O correu um erro inesperado");
         }
-
-        System.out.println("continua o programa");
     }
 
     private static void imprimirArquivoNoConsole(String nomeDoArquivo) throws IOException {
