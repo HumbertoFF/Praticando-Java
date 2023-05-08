@@ -1,6 +1,8 @@
 import main.java.Calculadora;
+import main.java.CheckedException;
 import main.java.Emprestimo;
 import main.java.PraticandoSet;
+import main.java.UncheckedException.*;
 
 import static main.java.GuardandoConsoantes.guardarConsoantes;
 
@@ -30,7 +32,13 @@ public class Main {
 
 
     //praticando Collection Set
-    PraticandoSet.collectionSet();
+    // PraticandoSet.collectionSet();
+
+    // praticando Exception que serve para tratar erros ou comportamentos inesperados do usuário
+        //O exemplo é de uma divisão de dois números inteiros, que se o usuário digitar outro dado que não seja números inteiros,
+        //por exemplo uma letra ou números quebrados e se digitar zero no denominador, aparecerá uma mensagem informando o problema.
+
+         CheckedException.imprimirArquivoDeTexto("arquivoDeTefxto.txt");
     }
 
 }
