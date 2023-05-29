@@ -18,7 +18,7 @@ public class CheckedException {
         }
     }
 
-    private static void imprimirArquivoNoConsole(String nomeDoArquivo) throws IOException {
+    public static void imprimirArquivoNoConsole(String nomeDoArquivo) throws IOException {
         //cria um arquivo qualquer e o nomeia
         File file = new File(nomeDoArquivo);
         //Realiza um Buffered de leitura para o arquivo informado
