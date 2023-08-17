@@ -5,3 +5,4 @@ Exercícios diversos de estudo Java
 3. Calcula o emprestimo a juros simples recebendo o valor de entrada e a quantidade de parcelas.
 4. Aplicando conhecimentos de Collection Set
 5. Tratamendo de erros por Exception
+6. Praticando Pilhas
