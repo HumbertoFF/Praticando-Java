@@ -27,12 +27,12 @@ public class CheckedException {
         //Realiza um Buffered de escrita para o arquivo informado
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        do{
-            bw.write(line);
-            bw.newLine();
-            line=br.readLine();
-        } while(line != null);
-        bw.flush();
-        br.close();
-    }
+            do{
+                bw.write(line);
+                bw.newLine();
+                line=br.readLine();
+            } while(line != null);
+            bw.flush();
+            br.close();
+        }
 }

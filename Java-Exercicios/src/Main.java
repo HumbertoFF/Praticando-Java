@@ -90,7 +90,7 @@ public class Main {
 
         System.out.println(carrosPopulares.values().toString());
 */
-        //imprimirArquivoDeTexto("arquivoDeTexto.txt");
+        imprimirArquivoDeTexto("arquivoDeTexto.txt");
 
 
         //Manipulação de um Set<String> para se tornar uma string personalizada dentro de uma única variável. Com separação por ponto e virgula
